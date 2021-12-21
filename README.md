@@ -1,5 +1,1 @@
-# Bilibili爬虫工具合集
-使用Python编写的针对B站的爬虫工具合集。仅用于研究用途。  
-## bilibili_countfans.py  
-获取Bilibili指定用户的粉丝数。  
-更改变量uid的值，就可以获得改uid对应用户的粉丝数量。  
+# Bilibili爬虫工具合集使用Python编写的针对B站的爬虫工具合集。仅用于研究用途。  ## get_user_info.py  获取指定用户信息，如用户名、粉丝数、用户等级等，需要知道用户的UID。  例：  ```response_data = get_user_data(433351)  # 发送请求，获取用户信息  print("B站用户名：" + get_name(response_data))  # 获取用户名并打印  ```## get_live_info.py获取指定直播间信息，如主播UID、是否开播、是否被封禁等，需要知道直播间房间号。  例：  ```response_data = get_live_data(5050)  # 发送请求，获取直播间信息  ​print("直播状态：" + get_live_status(response_data))  # 获取直播状态并打印  ```
