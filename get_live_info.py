@@ -30,8 +30,10 @@ def main():
     # print(get_all_info(response_data))
 
 
+# 请求直播间信息
 def get_live_data(room_id):
-    url = r"https://api.live.bilibili.com/xlive/web-room/v2/index/getRoomPlayInfo?room_id=" + str(room_id) + "&protocol=0,1&format=0,1,2&codec=0,1&qn=0&platform=web&ptype=8"
+    url = r"https://api.live.bilibili.com/xlive/web-room/v2/index/getRoomPlayInfo?room_id=" + str(
+        room_id) + "&protocol=0,1&format=0,1,2&codec=0,1&qn=0&platform=web&ptype=8"
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                       "Chrome/92.0.4515.131 Safari/537.36"}
